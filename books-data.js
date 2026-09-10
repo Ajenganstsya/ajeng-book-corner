@@ -47,22 +47,58 @@ window.BOOKS = {
     title: "Seporsi Mie Ayam Sebelum Mati",
     author: "Brian Khrisna",
     status: "finished",
-    rating: 0,
+    cover: "cover-seporsi-mie-ayam-sebelum-mati.jpg",
+    rating: 4,
+    maturity: 2,
+    genre: "Fiksi Kontemporer / Fiksi Reflektif (Mental Health)",
+    pages: 216,
+    sneakPeek: "Ale yang mempertanyakan kelanjutan hidupnya dan berniat untuk mengakhiri hidupnya dalam 24 jam ke depan.",
     quote_id: "",
     quote_en: "",
-    review_id: "Tulis ulasan pribadimu tentang buku ini di sini.",
-    review_en: "Write your personal review of this book here.",
+    review_id: "Bercerita tentang Ale, seorang pekerja kantoran alias budak korporat, berusia 37 tahun di Jakarta dengan tubuh bongsor dan hidup yang sepi. Ia jauh dari kata beruntung baik dalam percintaan, hubungan dengan rekan kerja, maupun keluarga. Tekanan hidup yang terus-menerus membuat Ale mengalami depresi berat dan berencana mengakhiri hidupnya. Namun, dalam 24 jam terakhir yang ia rencanakan, Ale justru melakukan hal-hal kecil yang tak pernah ia lakukan sebelumnya, makan siang bersama satpam apartemen, membagikan makanan untuk kucing liar, hingga menulis surat permohonan maaf dengan satu keinginan terakhir: menikmati semangkuk mie ayam favoritnya.\nMengangkat tema seberat kesehatan mental dan keinginan mengakhiri hidup, namun dibungkus dengan gaya bahasa yang ringan, kasual, bahkan jenaka. Pesan utama dari novel ini yaitu alasan seseorang bertahan hidup tidak selalu harus sesuatu yang besar, bisa sesederhana semangkuk mie ayam, satu percakapan, atau keinginan kecil melihat senja.",
+    review_en: "Tells the story of Ale, an office worker — a corporate slave, really — 37 years old, living in Jakarta with a large build and a lonely life. He's far from lucky in love, in his relationships with coworkers, and with his family. The constant pressure of life leaves Ale with severe depression, and he plans to end his life. But in the final 24 hours he's given himself, Ale ends up doing small things he's never done before: having lunch with the apartment security guard, sharing food with stray cats, and writing an apology letter with one last wish — to enjoy a bowl of his favorite chicken noodles.\nIt tackles a subject as heavy as mental health and the wish to end one's life, but wraps it in a light, casual, even funny writing style. The main message of this novel is that a reason to keep living doesn't always have to be something big — it can be as simple as a bowl of chicken noodles, one conversation, or a small wish to watch the sunset.",
     external: null
   },
   "sisi-tergelap-surga": {
     title: "Sisi Tergelap Surga",
     author: "Brian Khrisna",
     status: "finished",
-    rating: 0,
-    quote_id: "",
+    cover: "cover-sisi-tergelap-surga.jpg",
+    rating: 4,
+    maturity: 4,
+    genre: "Slice of Life",
+    pages: 304,
+    sneakPeek: "Jakarta sering kali dianggap sebagai \"surga\" atau tanah harapan bagi orang-orang di kampung halaman yang bermimpi mengubah nasib. Namun, di balik megahnya gedung-gedung tinggi dan gemerlap apartemen, tersimpan sebuah perkampungan kumuh yang dihuni oleh orang-orang marginal, mereka yang kalah oleh keadaan dan harus bertempur habis-habisan setiap harinya hanya untuk sekadar bisa makan esok hari.",
+    quotes: [
+      {
+        label: "Danang",
+        text: "\"Sebab bukankah kita semua sadar, bahwa Tuhan adalah seadil-adilnya hakim di seluruh dunia akhirat? Maka biarlah Tuhan saja yang menghukum kami. Jadi, biarkan saja itu menjadi urusan kami dengan Tuhan.\""
+      },
+      {
+        label: "Danang",
+        text: "\"Tuhan itu adil kok, kita mungkin nggak akan selalu dapat hukuman karena kesalahan yang kita lakukan, tapi kita pasti dihukum oleh penyesalan\""
+      },
+      {
+        label: "Danang",
+        text: "\"Jangan mengharap dimengerti kalau kamu sendiri tidak mampu memberi pengertian. Sebab, sebaik-baiknya pengertian adalah tidak memaksa orang lain untuk mengerti.\""
+      },
+      {
+        label: "Pak Badut",
+        text: "\"Sederhanalah, Maka sesederhana itu pula caramu merayakan kebahagiaan\""
+      },
+      {
+        label: "Pak Badut",
+        text: "\"Terkadang, Tuhan mengulurkan tangan bukan melalui para petinggi agama atau dari rumah-rumah ibadah, melainkan dari anak SMA yang terlihat cuek tetapi lebih mengenal apa itu tenggang rasa ketimbang orang-orang yang sibuk mengorupsi dana bansos pandemi untuk diri sendiri\""
+      },
+      {
+        label: "Tante Batak",
+        text: "\"Bagi beberapa orang, bahagia itu tidak sulit untuk dicari, kebahagiaan bisa lahir dari hal-hal kecil, seperti dengkur kucing liar yang kekenyangan selepas makan atau wanita tua yang duduk di makam suaminya. Kebahagiaan selalu dekat dengan hari yang bersyukur\""
+      }
+    ],
+    quote_id: "\"Baru diberi beberapa ujian saja sudah berani memojokkan Tuhan? Lihat apa yang bisa Tuhan lakukan untuk hidupmu. Nikmat Tuhan yang mana lagi yang mau kamu dustakan\"",
     quote_en: "",
-    review_id: "Tulis ulasan pribadimu tentang buku ini di sini.",
-    review_en: "Write your personal review of this book here.",
+    review_id: "Novel ini mengangkat kehidupan sebuah kampung di Jakarta, kota yang bagi banyak orang dianggap \"surga\" tempat mengejar mimpi, tapi di sisi lain siap melumat habis harapan mereka yang datang tanpa cukup bekal. Cerita ini menggunakan banyak sudut pandang (POV) dari penghuni kampung tersebut: mulai dari pentolan terminal yang diam-diam peduli pada sekitarnya, pekerja seks yang berjuang menafkahi anak atau orang tuanya di kampung halaman, pencuri motor dengan ibu yang sakit struk, pasangan penjual tahu yang baik hati, hingga seorang bapak berkostum badut ayam yang tetap ingat Tuhan di tengah kesulitan hidupnya.",
+    review_en: "This novel portrays life in a kampung in Jakarta — a city many see as a \"paradise\" for chasing dreams, but one that's just as ready to crush the hopes of those who arrive without enough to fall back on. The story is told through many points of view from the kampung's residents: from a terminal tough guy who quietly cares for those around him, a sex worker fighting to support her child or parents back home, a motorcycle thief with a mother recovering from a stroke, a kind-hearted tofu-selling couple, to a father in a chicken mascot costume who still remembers God amid his hardships.",
     external: null
   },
   "namaku-alam": {
@@ -107,11 +143,15 @@ window.BOOKS = {
     title: "Laut Bercerita",
     author: "Leila S. Chudori",
     status: "finished",
-    rating: 0,
-    quote_id: "",
+    cover: "cover-laut-bercerita.jpg",
+    rating: 5,
+    maturity: 2,
+    genre: "Historical Fiction",
+    pages: 379,
+    quote_id: "\"Bapak, Asmara, Ibu, dan Anjani, kalian tidak perlu mencari saya lagi. Dan kalian, para penganiaya itu, tidak perlu menyembunyikan jasad saya di dasar laut atau di mana pun karena saya tahu persis kalian takkan pernah bisa melenyapkan ingatan kawan-kawan saya.\"— Biru Laut",
     quote_en: "",
-    review_id: "Tulis ulasan pribadimu tentang buku ini di sini.",
-    review_en: "Write your personal review of this book here.",
+    review_id: "Biru Laut Wibisono, mahasiswa Sastra Inggris di sebuah universitas di Yogyakarta yang aktif dalam organisasi aktivis Winatra dan Wirasena, kelompok yang didirikan untuk menuntut perubahan rezim Orde Baru. Latar cerita dari tahun 1991 hingga 2008, namun berfokus pada tahun 1998, masa transisi paling genting dari Orde Baru ke Reformasi. Titik balik cerita datang lewat peristiwa \"Sabtu Kelam\" yang membuat Laut dan teman-temannya menjadi buronan. Novel ini bercerita dalam dua sudut pandang: Laut sendiri, dan Asmara Jati (adiknya), yang menggambarkan sisi keluarga yang harus hidup dalam ketidakpastian panjang tentang nasib orang yang mereka cintai.",
+    review_en: "Biru Laut Wibisono is an English Literature student at a university in Yogyakarta, active in the activist organizations Winatra and Wirasena, groups founded to demand the end of the New Order regime. The story spans 1991 to 2008, but centers on 1998, the most critical transition period from the New Order to Reform era. The story's turning point comes through the \"Dark Saturday\" incident, which turns Laut and his friends into fugitives. The novel is told from two points of view: Laut himself, and Asmara Jati, his younger sister, portraying the side of a family that has to live with long uncertainty over the fate of someone they love.",
     external: null
   },
   "bandung-menjelang-pagi": {
