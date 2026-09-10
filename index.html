@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ajeng's Book Corner</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Kaushan+Script&family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  /* ---- Hero band (mirrors the reference title crop) ---- */
+  .hero-band{
+    background: linear-gradient(115deg, var(--pink-deep) 0%, #A17A6E 45%, var(--green-deep) 100%);
+    color: var(--paper-soft);
+    padding: 46px 24px 40px;
+    overflow: hidden;
+  }
+
+  .hero-inner{ max-width: 1000px; margin: 0 auto; }
+
+  .hero-line1{
+    margin: 0;
+    text-align: right;
+    font-family: 'Karla', sans-serif;
+    font-weight: 500;
+    font-size: clamp(20px, 3.4vw, 32px);
+    padding-right: 4px;
+  }
+
+  .hero-script{
+    margin: -6px 0 -10px;
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 400;
+    font-size: clamp(52px, 11vw, 128px);
+    line-height: 1;
+    color: var(--paper-soft);
+  }
+
+  .hero-line3{
+    margin: 0;
+    text-align: right;
+    font-family: 'Karla', sans-serif;
+    font-weight: 500;
+    font-size: clamp(18px, 2.6vw, 26px);
+    padding-right: 4px;
+  }
+
+  .hero-sub{
+    max-width: 46ch;
+    margin: 22px 0 0;
+    color: rgba(251,247,240,0.88);
+    font-size: 15px;
+  }
+
+  /* ---- Shelf sections ---- */
+  .shelf{ margin-top: 56px; }
+
+  .shelf-head{
+    display:flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 12px;
+    margin-bottom: 8px;
+  }
+
+  .shelf-head h2{
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 25px;
+    margin: 0;
+  }
+
+  .shelf.finished .shelf-head h2{ color: var(--pink-deep); }
+  .shelf.reading .shelf-head h2{ color: var(--green-deep); }
+
+  .shelf-count{ font-size: 14px; color: var(--ink-soft); white-space: nowrap; }
+
+  /* ---- Tilted spine shelf ---- */
+  .shelf-visual{
+    display:flex;
+    align-items: flex-end;
+    gap: 14px;
+    padding: 46px 10px 30px;
+    overflow-x: auto;
+    overflow-y: visible;
+  }
+
+  .spine{
+    flex-shrink: 0;
+    width: 58px;
+    height: var(--h, 330px);
+    background: var(--paper-soft);
+    border: 1px solid var(--ink);
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 6px;
+    text-decoration: none;
+    color: var(--ink);
+    box-shadow: 3px 6px 12px rgba(58,46,42,0.22);
+    transform: rotate(var(--rot, 0deg));
+    transition: transform 0.2s ease;
+    cursor: pointer;
+  }
+
+  .spine:hover, .spine:focus-visible{
+    transform: rotate(var(--rot, 0deg)) translateY(-10px);
+  }
+
+  .spine--accent-pink{ background: var(--pink-deep); color: var(--paper-soft); border-color: var(--pink-deep); }
+  .spine--accent-green{ background: var(--green-deep); color: var(--paper-soft); border-color: var(--green-deep); }
+
+  .spine-text{
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 100%;
+  }
+
+  .spine-title{
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.01em;
+    white-space: nowrap;
+  }
+
+  .spine-author{
+    font-family: 'Karla', sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.03em;
+    white-space: nowrap;
+    opacity: 0.75;
+  }
+
+  .shelf-note{
+    font-size: 12px;
+    color: var(--ink-soft);
+    margin: 4px 0 0;
+  }
+
+  @media (max-width: 640px){
+    .hero-band{ padding: 34px 18px 30px; }
+    .hero-line1, .hero-line3{ text-align: left; }
+    .shelf-visual{ justify-content: flex-start; }
+  }
+</style>
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="lang-toggle" role="group" aria-label="Language / Bahasa">
+      <button type="button" id="btn-id" aria-pressed="true">ID</button>
+      <button type="button" id="btn-en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+
+  <div class="hero-band">
+    <div class="hero-inner">
+      <p class="hero-line1">Welcome to Ajeng's</p>
+      <h1 class="hero-script">Book Corner</h1>
+      <p class="hero-line3">on the internet</p>
+      <p class="hero-sub" data-lang="id">Rak buku pribadi Ajeng — tempat mencatat buku yang sudah selesai dibaca dan yang masih dalam proses. Ketuk sampul buku untuk membaca ulasannya.</p>
+      <p class="hero-sub" data-lang="en">Ajeng's personal shelf — a place to keep track of the books she's finished and the ones she's still working through. Tap a spine to read the review.</p>
+    </div>
+  </div>
+
+  <div class="wrap">
+
+    <section class="shelf finished">
+      <div class="shelf-head">
+        <h2 data-lang="id">Sudah Selesai Dibaca</h2>
+        <h2 data-lang="en">Finished Reading</h2>
+        <span class="shelf-count">6 <span data-lang="id">buku</span><span data-lang="en">books</span></span>
+      </div>
+
+      <div class="shelf-visual">
+        <a class="spine" style="--rot:-5deg; --h:350px;" href="review.html?book=di-tanah-lada" aria-label="Di Tanah Lada oleh Ziggy Zezsyazeoviennazabrizkie — baca review">
+          <span class="spine-text">
+            <span class="spine-title">Di Tanah Lada</span>
+            <span class="spine-author">Ziggy Zezsyazeoviennazabrizkie</span>
+          </span>
+        </a>
+
+        <a class="spine" style="--rot:3deg; --h:310px;" href="review.html?book=seporsi-mie-ayam-sebelum-mati" aria-label="Seporsi Mie Ayam Sebelum Mati oleh Brian Khrisna — baca review">
+          <span class="spine-text">
+            <span class="spine-title">Seporsi Mie Ayam Sebelum Mati</span>
+            <span class="spine-author">Brian Khrisna</span>
+          </span>
+        </a>
+
+        <a class="spine spine--accent-pink" style="--rot:-2deg; --h:380px;" href="review.html?book=sisi-tergelap-surga" aria-label="Sisi Tergelap Surga oleh Brian Khrisna — baca review">
+          <span class="spine-text">
+            <span class="spine-title">Sisi Tergelap Surga</span>
+            <span class="spine-author">Brian Khrisna</span>
+          </span>
+        </a>
+
+        <a class="spine" style="--rot:6deg; --h:295px;" href="review.html?book=namaku-alam" aria-label="Namaku Alam oleh Leila S. Chudori — baca review">
+          <span class="spine-text">
+            <span class="spine-title">Namaku Alam</span>
+            <span class="spine-author">Leila S. Chudori</span>
+          </span>
+        </a>
+
+        <a class="spine" style="--rot:-4deg; --h:345px;" href="review.html?book=laut-bercerita" aria-label="Laut Bercerita oleh Leila S. Chudori — baca review">
+          <span class="spine-text">
+            <span class="spine-title">Laut Bercerita</span>
+            <span class="spine-author">Leila S. Chudori</span>
+          </span>
+        </a>
+
+        <a class="spine" style="--rot:2deg; --h:370px;" href="review.html?book=bandung-menjelang-pagi" aria-label="Bandung Menjelang Pagi oleh Brian Khrisna — baca review">
+          <span class="spine-text">
+            <span class="spine-title">Bandung Menjelang Pagi</span>
+            <span class="spine-author">Brian Khrisna</span>
+          </span>
+        </a>
+      </div>
+      <p class="shelf-note" data-lang="id">Ketuk sampul buku untuk membaca ulasan pribadinya.</p>
+      <p class="shelf-note" data-lang="en">Tap a spine to read its personal review.</p>
+    </section>
+
+    <section class="shelf reading">
+      <div class="shelf-head">
+        <h2 data-lang="id">Sedang Dibaca</h2>
+        <h2 data-lang="en">Currently Reading</h2>
+        <span class="shelf-count">2 <span data-lang="id">buku</span><span data-lang="en">books</span></span>
+      </div>
+
+      <div class="shelf-visual">
+        <a class="spine" style="--rot:-6deg; --h:330px;" href="review.html?book=lotus-in-the-mud" aria-label="Lotus in the Mud oleh Annelie — baca review">
+          <span class="spine-text">
+            <span class="spine-title">Lotus in the Mud</span>
+            <span class="spine-author">Annelie</span>
+          </span>
+        </a>
+
+        <a class="spine spine--accent-green" style="--rot:4deg; --h:400px;" href="review.html?book=the-little-prince" aria-label="The Little Prince oleh Antoine de Saint-Exupéry — baca review">
+          <span class="spine-text">
+            <span class="spine-title">The Little Prince</span>
+            <span class="spine-author">Antoine de Saint-Exupéry</span>
+          </span>
+        </a>
+      </div>
+      <p class="shelf-note" data-lang="id">Ketuk sampul buku untuk membaca ulasan pribadinya.</p>
+      <p class="shelf-note" data-lang="en">Tap a spine to read its personal review.</p>
+    </section>
+
+    <footer>
+      <p data-lang="id">Diperbarui setiap kali ada buku baru yang dibuka atau ditutup.</p>
+      <p data-lang="en">Updated every time a new book gets opened or closed.</p>
+    </footer>
+
+  </div>
+
+<script>
+  const body = document.body;
+  const btnId = document.getElementById('btn-id');
+  const btnEn = document.getElementById('btn-en');
+
+  function setLang(lang){
+    const isEn = lang === 'en';
+    body.classList.toggle('lang-en', isEn);
+    body.setAttribute('lang', lang);
+    btnId.setAttribute('aria-pressed', String(!isEn));
+    btnEn.setAttribute('aria-pressed', String(isEn));
+  }
+
+  btnId.addEventListener('click', () => setLang('id'));
+  btnEn.addEventListener('click', () => setLang('en'));
+</script>
+
+</body>
+</html>

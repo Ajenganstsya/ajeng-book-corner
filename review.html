@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Review — Ajeng's Book Corner</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .back-link{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    margin: 28px 24px 0;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--ink-soft);
+    border-bottom: 1px solid transparent;
+  }
+  .back-link:hover{ border-bottom-color: currentColor; }
+
+  .review-wrap{ max-width: 680px; margin: 0 auto; padding: 20px 24px 90px; }
+
+  .cover-img{
+    display: block;
+    width: 160px;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 4px 8px 18px rgba(58,46,42,0.28);
+    margin: 4px 0 22px;
+  }
+
+  .badge{
+    display:inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 999px;
+    color: var(--paper-soft);
+    margin-bottom: 18px;
+  }
+  .badge.finished{ background: var(--pink-deep); }
+  .badge.reading{ background: var(--green-deep); }
+
+  .review-title{
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: clamp(30px, 5vw, 44px);
+    margin: 0 0 6px;
+    line-height: 1.1;
+  }
+
+  .review-author{
+    font-size: 16px;
+    color: var(--ink-soft);
+    margin: 0 0 18px;
+  }
+
+  .rating{
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: var(--pink-deep);
+    margin: 0 0 26px;
+  }
+  .rating .empty{ color: var(--line); }
+  .rating-note{ font-size: 13px; color: var(--ink-soft); letter-spacing: normal; margin-left: 6px; }
+
+  .quote{
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 17px;
+    line-height: 1.6;
+    color: var(--ink-soft);
+    text-align: center;
+    padding: 28px 10px 6px;
+    margin: 8px 0 28px;
+    border-top: 1px solid var(--line);
+  }
+
+  mark{
+    background: rgba(217,149,155,0.35);
+    color: inherit;
+    padding: 0 3px;
+    border-radius: 2px;
+  }
+
+  .detail-table{ margin: 4px 0 28px; border-top: 1px solid var(--line); }
+
+  .detail-row{
+    display:flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 20px;
+    padding: 13px 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .detail-label{
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: var(--ink-soft);
+    white-space: nowrap;
+  }
+
+  .detail-value{
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 15px;
+    text-align: right;
+  }
+
+  .icon-row{ font-size: 18px; letter-spacing: 3px; }
+  .icon-row .empty{ color: var(--line); }
+  .icon-row.stars{ color: var(--pink-deep); }
+  .icon-row.hearts{ color: var(--green-deep); }
+
+  .sneak-peek-value{
+    max-width: 60%;
+    text-align: right;
+  }
+
+  .quotes-section{ margin-top: 8px; }
+
+  .quote-block{ margin-bottom: 30px; }
+
+  .quote-label{
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--paper-soft);
+    background: var(--green-deep);
+    padding: 5px 14px;
+    border-radius: 999px;
+    margin-bottom: 12px;
+  }
+
+  .quote-block:nth-child(even) .quote-label{ background: var(--pink-deep); }
+
+  .quote-block p{
+    font-size: 15px;
+    white-space: pre-line;
+    margin: 0 0 10px;
+  }
+
+  .review-card{
+    background: var(--paper-soft);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 28px 26px;
+  }
+
+  .review-card h2{
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0 0 12px;
+    color: var(--ink-soft);
+  }
+
+  .review-body{
+    font-size: 16px;
+    white-space: pre-line;
+    margin: 0;
+  }
+
+  .external-link{
+    display:inline-block;
+    margin-top: 28px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--green-deep);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+  }
+  .external-link:hover{ border-bottom-color: currentColor; }
+
+  .not-found{ padding: 60px 0; text-align: center; }
+</style>
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="lang-toggle" role="group" aria-label="Language / Bahasa">
+      <button type="button" id="btn-id" aria-pressed="true">ID</button>
+      <button type="button" id="btn-en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+
+  <a class="back-link" href="index.html">
+    <span data-lang="id">← Kembali ke rak buku</span>
+    <span data-lang="en">← Back to the shelf</span>
+  </a>
+
+  <div class="review-wrap" id="content"></div>
+
+<script src="books-data.js"></script>
+<script>
+  const body = document.body;
+  const btnId = document.getElementById('btn-id');
+  const btnEn = document.getElementById('btn-en');
+  const content = document.getElementById('content');
+
+  const params = new URLSearchParams(window.location.search);
+  const slug = params.get('book');
+  const book = window.BOOKS[slug];
+
+  let currentLang = 'id';
+
+  function starRow(rating){
+    let out = '';
+    for(let i = 1; i <= 5; i++){
+      out += i <= rating ? '★' : '<span class="empty">★</span>';
+    }
+    return out;
+  }
+
+  function heartRow(level){
+    let out = '';
+    for(let i = 1; i <= 5; i++){
+      out += i <= level ? '♥' : '<span class="empty">♡</span>';
+    }
+    return out;
+  }
+
+  function detailRow(label_id, label_en, valueHtml){
+    return `
+      <div class="detail-row">
+        <span class="detail-label">${currentLang === 'id' ? label_id : label_en}</span>
+        <span class="detail-value">${valueHtml}</span>
+      </div>`;
+  }
+
+  function renderDetailTable(){
+    const rows = [];
+    if(book.maturity !== undefined){
+      rows.push(detailRow('MATURITY', 'MATURITY', `<span class="icon-row hearts">${heartRow(book.maturity)}</span>`));
+    }
+    if(book.genre){
+      rows.push(detailRow('GENRE', 'GENRE', book.genre));
+    }
+    if(book.timeBackground){
+      rows.push(detailRow('LATAR WAKTU', 'TIME BACKGROUND', book.timeBackground));
+    }
+    if(book.pages){
+      rows.push(detailRow('HALAMAN', 'PAGES', `${book.pages} ${currentLang === 'id' ? 'halaman' : 'pages'}`));
+    }
+    if(book.theme){
+      rows.push(detailRow('TEMA', 'THEME', book.theme));
+    }
+    if(book.sneakPeek){
+      rows.push(detailRow('CUPLIKAN', 'SNEAK PEEK', `<span class="sneak-peek-value">${book.sneakPeek}</span>`));
+    }
+    return rows.length ? `<div class="detail-table">${rows.join('')}</div>` : '';
+  }
+
+  function renderQuotes(){
+    if(!book.quotes || !book.quotes.length) return '';
+    const blocks = book.quotes.map(q => `
+      <div class="quote-block">
+        <span class="quote-label">${q.label}</span>
+        <p>${q.text}</p>
+      </div>
+    `).join('');
+    return `
+      <div class="quotes-section">
+        <h2 style="font-family:'Fraunces',serif;font-weight:600;font-size:16px;color:var(--ink-soft);margin:0 0 18px;">
+          ${currentLang === 'id' ? 'Kutipan favorit' : 'Favorite quotes'}
+        </h2>
+        ${blocks}
+      </div>`;
+  }
+
+  function render(){
+    if(!book){
+      content.innerHTML = `
+        <div class="not-found">
+          <p data-lang="id">Buku tidak ditemukan.</p>
+          <p data-lang="en">Book not found.</p>
+        </div>`;
+      applyLangVisibility();
+      return;
+    }
+
+    document.title = book.title + " — Ajeng's Book Corner";
+
+    const statusLabel = book.status === 'finished'
+      ? (currentLang === 'id' ? 'Sudah Selesai Dibaca' : 'Finished Reading')
+      : (currentLang === 'id' ? 'Sedang Dibaca' : 'Currently Reading');
+
+    const review = currentLang === 'id' ? book.review_id : book.review_en;
+    const quote = currentLang === 'id' ? book.quote_id : book.quote_en;
+
+    content.innerHTML = `
+      ${book.cover ? `<img class="cover-img" src="${book.cover}" alt="${book.title}">` : ''}
+      <span class="badge ${book.status}">${statusLabel}</span>
+      <h1 class="review-title">${book.title}</h1>
+      <p class="review-author">${book.author}</p>
+      <p class="rating">
+        <span class="icon-row stars">${starRow(book.rating)}</span>
+        ${book.rating === 0 ? `<span class="rating-note">${currentLang === 'id' ? 'belum dinilai' : 'not rated yet'}</span>` : ''}
+      </p>
+      ${renderDetailTable()}
+      ${renderQuotes()}
+      ${quote ? `<p class="quote">${quote}</p>` : ''}
+      <div class="review-card">
+        <h2>${currentLang === 'id' ? 'Ulasan pribadi' : 'Personal review'}</h2>
+        <p class="review-body">${review}</p>
+      </div>
+      ${book.external ? `<a class="external-link" href="${book.external.url}" target="_blank" rel="noopener">${currentLang === 'id' ? 'Lihat di' : 'View on'} ${book.external.source}</a>` : ''}
+    `;
+  }
+
+  function applyLangVisibility(){
+    body.classList.toggle('lang-en', currentLang === 'en');
+    body.setAttribute('lang', currentLang);
+    btnId.setAttribute('aria-pressed', String(currentLang === 'id'));
+    btnEn.setAttribute('aria-pressed', String(currentLang === 'en'));
+  }
+
+  function setLang(lang){
+    currentLang = lang;
+    applyLangVisibility();
+    render();
+  }
+
+  btnId.addEventListener('click', () => setLang('id'));
+  btnEn.addEventListener('click', () => setLang('en'));
+
+  render();
+  applyLangVisibility();
+</script>
+
+</body>
+</html>
