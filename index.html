@@ -111,8 +111,20 @@
     transform: rotate(var(--rot, 0deg)) translateY(-10px);
   }
 
-  .spine--accent-pink{ background: var(--pink-deep); color: var(--paper-soft); border-color: var(--pink-deep); }
-  .spine--accent-green{ background: var(--green-deep); color: var(--paper-soft); border-color: var(--green-deep); }
+  .spine--accent-pink{ background: var(--pink-deep); color: var(--paper-soft); border-color: var(--ink); }
+  .spine--accent-green{ background: var(--green-deep); color: var(--paper-soft); border-color: var(--ink); }
+
+  /* Finished shelf: light pink -> deep pink gradient, one shade per book */
+  .spine--pink-1{ background: #F8E3E6; color: var(--ink); }
+  .spine--pink-2{ background: #E6C6CB; color: var(--ink); }
+  .spine--pink-3{ background: #D3AAB0; color: var(--ink); }
+  .spine--pink-4{ background: #C18D94; color: var(--ink); }
+  .spine--pink-5{ background: #AE7179; color: var(--paper-soft); }
+  .spine--pink-6{ background: #9C545E; color: var(--paper-soft); }
+
+  /* Reading shelf: light sage -> deep sage gradient, one shade per book */
+  .spine--sage-1{ background: #E6ECDB; color: var(--ink); }
+  .spine--sage-2{ background: #4C5941; color: var(--paper-soft); }
 
   .spine-text{
     writing-mode: vertical-rl;
@@ -181,42 +193,42 @@
       </div>
 
       <div class="shelf-visual">
-        <a class="spine" style="--rot:-5deg; --h:350px;" href="review.html?book=di-tanah-lada" aria-label="Di Tanah Lada oleh Ziggy Zezsyazeoviennazabrizkie — baca review">
+        <a class="spine spine--pink-1" style="--rot:-5deg; --h:350px;" href="review.html?book=di-tanah-lada" aria-label="Di Tanah Lada oleh Ziggy Zezsyazeoviennazabrizkie — baca review">
           <span class="spine-text">
             <span class="spine-title">Di Tanah Lada</span>
             <span class="spine-author">Ziggy Zezsyazeoviennazabrizkie</span>
           </span>
         </a>
 
-        <a class="spine" style="--rot:3deg; --h:310px;" href="review.html?book=seporsi-mie-ayam-sebelum-mati" aria-label="Seporsi Mie Ayam Sebelum Mati oleh Brian Khrisna — baca review">
+        <a class="spine spine--pink-2" style="--rot:3deg; --h:310px;" href="review.html?book=seporsi-mie-ayam-sebelum-mati" aria-label="Seporsi Mie Ayam Sebelum Mati oleh Brian Khrisna — baca review">
           <span class="spine-text">
             <span class="spine-title">Seporsi Mie Ayam Sebelum Mati</span>
             <span class="spine-author">Brian Khrisna</span>
           </span>
         </a>
 
-        <a class="spine spine--accent-pink" style="--rot:-2deg; --h:380px;" href="review.html?book=sisi-tergelap-surga" aria-label="Sisi Tergelap Surga oleh Brian Khrisna — baca review">
+        <a class="spine spine--pink-3" style="--rot:-2deg; --h:380px;" href="review.html?book=sisi-tergelap-surga" aria-label="Sisi Tergelap Surga oleh Brian Khrisna — baca review">
           <span class="spine-text">
             <span class="spine-title">Sisi Tergelap Surga</span>
             <span class="spine-author">Brian Khrisna</span>
           </span>
         </a>
 
-        <a class="spine" style="--rot:6deg; --h:295px;" href="review.html?book=namaku-alam" aria-label="Namaku Alam oleh Leila S. Chudori — baca review">
+        <a class="spine spine--pink-4" style="--rot:6deg; --h:295px;" href="review.html?book=namaku-alam" aria-label="Namaku Alam oleh Leila S. Chudori — baca review">
           <span class="spine-text">
             <span class="spine-title">Namaku Alam</span>
             <span class="spine-author">Leila S. Chudori</span>
           </span>
         </a>
 
-        <a class="spine" style="--rot:-4deg; --h:345px;" href="review.html?book=laut-bercerita" aria-label="Laut Bercerita oleh Leila S. Chudori — baca review">
+        <a class="spine spine--pink-5" style="--rot:-4deg; --h:345px;" href="review.html?book=laut-bercerita" aria-label="Laut Bercerita oleh Leila S. Chudori — baca review">
           <span class="spine-text">
             <span class="spine-title">Laut Bercerita</span>
             <span class="spine-author">Leila S. Chudori</span>
           </span>
         </a>
 
-        <a class="spine" style="--rot:2deg; --h:370px;" href="review.html?book=bandung-menjelang-pagi" aria-label="Bandung Menjelang Pagi oleh Brian Khrisna — baca review">
+        <a class="spine spine--pink-6" style="--rot:2deg; --h:370px;" href="review.html?book=bandung-menjelang-pagi" aria-label="Bandung Menjelang Pagi oleh Brian Khrisna — baca review">
           <span class="spine-text">
             <span class="spine-title">Bandung Menjelang Pagi</span>
             <span class="spine-author">Brian Khrisna</span>
@@ -235,14 +247,14 @@
       </div>
 
       <div class="shelf-visual">
-        <a class="spine" style="--rot:-6deg; --h:330px;" href="review.html?book=lotus-in-the-mud" aria-label="Lotus in the Mud oleh Annelie — baca review">
+        <a class="spine spine--sage-1" style="--rot:-6deg; --h:330px;" href="review.html?book=lotus-in-the-mud" aria-label="Lotus in the Mud oleh Annelie — baca review">
           <span class="spine-text">
             <span class="spine-title">Lotus in the Mud</span>
             <span class="spine-author">Annelie</span>
           </span>
         </a>
 
-        <a class="spine spine--accent-green" style="--rot:4deg; --h:400px;" href="review.html?book=the-little-prince" aria-label="The Little Prince oleh Antoine de Saint-Exupéry — baca review">
+        <a class="spine spine--sage-2" style="--rot:4deg; --h:400px;" href="review.html?book=the-little-prince" aria-label="The Little Prince oleh Antoine de Saint-Exupéry — baca review">
           <span class="spine-text">
             <span class="spine-title">The Little Prince</span>
             <span class="spine-author">Antoine de Saint-Exupéry</span>
