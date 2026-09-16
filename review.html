@@ -33,6 +33,25 @@
     margin: 4px 0 22px;
   }
 
+  .characters-section{ margin: 8px 0 32px; }
+
+  .characters-section h2{
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--ink-soft);
+    margin: 0 0 14px;
+  }
+
+  .characters-img{
+    display: block;
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 3px 6px 16px rgba(58,46,42,0.2);
+  }
+
   .badge{
     display:inline-block;
     font-size: 12px;
@@ -305,6 +324,11 @@
       </p>
       ${renderDetailTable()}
       ${renderQuotes()}
+      ${book.charactersImage ? `
+      <div class="characters-section">
+        <h2>${currentLang === 'id' ? 'Karakter' : 'Characters'}</h2>
+        <img class="characters-img" src="${book.charactersImage}" alt="${currentLang === 'id' ? 'Daftar karakter' : 'Character list'} — ${book.title}">
+      </div>` : ''}
       ${quote ? `<p class="quote">${quote}</p>` : ''}
       <div class="review-card">
         <h2>${currentLang === 'id' ? 'Ulasan pribadi' : 'Personal review'}</h2>

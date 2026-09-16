@@ -203,13 +203,59 @@ window.BOOKS = {
   "lotus-in-the-mud": {
     title: "Lotus in the Mud",
     author: "Annelie",
-    status: "reading",
+    status: "finished",
     cover: "cover-lotus-in-the-mud.jpg",
-    rating: 0,
+    charactersImage: "characters-lotus-in-the-mud.jpg",
+    rating: 3,
+    maturity: 0,
+    genre: "Romance",
+    pages: 499,
+    quotes: [
+      {
+        label: "Daniel",
+        text: "\"You will, Audine. Someone as sweet as you really deserve the love of a man as sweet as you too. Your future relationship will have a lot of unexpected miracles in it. You will,\" gumam Daniel sebelum meninggalkan toko bunga dengan garis bibir tercipta."
+      },
+      {
+        label: "Dareen",
+        text: "\"Syukur deh, bagus, mindset lo harus gitu terus. Pokoknya, if something doesn't match to your expectations bukan berarti lo yang salah, atau lo yang gagal. Cuma roda kehidupannya yang lagi berputar, nggak mungkin kan, kita hidup mulus-mulus aja?\" sahut Dareen dengan bijak."
+      },
+      {
+        label: "Ocean & Aliesha",
+        text: "Buku yang dibaca Ocean saat ini adalah buku pemberian Aliesha dan baru saja tiba tadi siang. Aliesha memberikannya kepada Ocean karena ia salah membeli buku, menurutnya buku itu tidak jelas, pembahasannya terlalu dewasa dan sulit dipahami.\n\"Kalau kamu nggak paham alurnya, pahamin aja tiap emosi yang dirasain dari tiap tokoh, so you can still get the point.\" Ocean menyelipkan pembatas buku, lalu menutup buku bersampul pantai itu yang kemudian mengalihkan pandangannya penuh ke arah sang adik. \"Nggak ada buku yang nggak jelas, Alie, karena tiap buku punya perspektif masing-masing. Tinggal kamu yang milih mau baca buku pakai logika atau perasaan.\""
+      },
+      {
+        label: "Serendipity",
+        text: "\"Serendipity: keberuntungan yang didapat saat seseorang tidak bermaksud untuk mencari. Atau sederhananya, kebetulan yang menyenangkan.\""
+      },
+      {
+        label: "Ayah",
+        text: "Tanpa disangka, pria itu menjawab, mengabaikan sejenak pada apa yang ada di dunia itu bukan tindakan jahat. Nggak ada yang salah dari menutup telinga dan mata demi mengistirahatkan pikiran. Nggak apa-apa, jangan minta maaf karena dunia yang harusnya minta maaf sama kamu, katanya sembari tersenyum hangat. Sama seperti senyuman Ayah."
+      },
+      {
+        label: "Sepertiga Malam",
+        text: "Memang sepertiga malam adalah waktu terbaik untuk 'mengenali' seseorang. Karena ada satu kutipan bilang 'Darker the night, truer the feelings'. Tubuh dan pikiran tengah berada pada puncak tertinggi rasa lelah, sehingga tak memungkinkan lagi bagi seseorang mengerahkan energi untuk berpura-pura sehingga lembut dari sorot cahaya bulan dengan mudah mengantarkan mereka pada kejujuran."
+      },
+      {
+        label: "Book Quotes",
+        text: "\"Berada di ruang ini, mungkin sudah takdirmu. Tapi, jendela mana yang ingin kamu lihat, itu pilihanmu.\""
+      },
+      {
+        label: "Ocean's Quotes",
+        text: "Lo bisa ajak gue buat ngeliat jendela mana yang mau lo pilih, jangan merasa sendiri ya, Au. Feel free to ask me to go with you, and let's choose the window together."
+      },
+      {
+        label: "Ikhlas",
+        text: "...sebelum terbawa oleh atmosfer sendu. \"Kamu tau kenapa manusia selalu diajarkan untuk ikhlas? Karena akan banyak hal-hal tidak terduga di dalam hidup yang akan datang secara tiba-tiba, hal-hal dengan situasi di mana kamu harus mau menerima atau merelakan.\""
+      },
+      {
+        label: "The Goodness of Suffering",
+        text: "The goodness of suffering is real. Every good things take time."
+      }
+    ],
     quote_id: "",
     quote_en: "",
-    review_id: "Kamu masih membaca buku ini. Tulis catatan atau kesan sementaramu di sini, lalu perbarui setelah selesai.",
-    review_en: "You're still reading this one. Jot down your notes or first impressions here, then update once you finish.",
+    review_id: "Tulis ulasan pribadimu tentang buku ini di sini.",
+    review_en: "Write your personal review of this book here.",
     external: { source: "Gramedia", url: "https://www.gramedia.com/products/lotus-in-the-mud" }
   },
   "the-little-prince": {
