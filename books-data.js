@@ -64,7 +64,7 @@ window.BOOKS = {
     author: "Brian Khrisna",
     status: "finished",
     cover: "cover-sisi-tergelap-surga.jpg",
-    rating: 4,
+    rating: 5,
     maturity: 4,
     genre: "Slice of Life",
     pages: 304,
