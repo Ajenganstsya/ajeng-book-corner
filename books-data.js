@@ -205,7 +205,7 @@ window.BOOKS = {
     author: "Annelie",
     status: "finished",
     cover: "cover-lotus-in-the-mud.jpg",
-    charactersImage: "characters-lotus-in-the-mud.jpg",
+    charactersImage: "characters-lotus-in-the-mud.png",
     rating: 3,
     maturity: 0,
     genre: "Romance",
