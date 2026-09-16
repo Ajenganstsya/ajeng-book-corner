@@ -64,7 +64,7 @@ window.BOOKS = {
     author: "Brian Khrisna",
     status: "finished",
     cover: "cover-sisi-tergelap-surga.jpg",
-    rating: 5,
+    rating: 4,
     maturity: 4,
     genre: "Slice of Life",
     pages: 304,
@@ -212,7 +212,7 @@ window.BOOKS = {
     pages: 499,
     quotes: [
       {
-        label: "Ocean",
+        label: "Daniel",
         text: "\"You will, Audine. Someone as sweet as you really deserve the love of a man as sweet as you too. Your future relationship will have a lot of unexpected miracles in it. You will,\" gumam Daniel sebelum meninggalkan toko bunga dengan garis bibir tercipta."
       },
       {
@@ -220,7 +220,7 @@ window.BOOKS = {
         text: "\"Syukur deh, bagus, mindset lo harus gitu terus. Pokoknya, if something doesn't match to your expectations bukan berarti lo yang salah, atau lo yang gagal. Cuma roda kehidupannya yang lagi berputar, nggak mungkin kan, kita hidup mulus-mulus aja?\" sahut Dareen dengan bijak."
       },
       {
-        label: "Baca buku pakai logika atau perasaan",
+        label: "Ocean & Aliesha",
         text: "Buku yang dibaca Ocean saat ini adalah buku pemberian Aliesha dan baru saja tiba tadi siang. Aliesha memberikannya kepada Ocean karena ia salah membeli buku, menurutnya buku itu tidak jelas, pembahasannya terlalu dewasa dan sulit dipahami.\n\"Kalau kamu nggak paham alurnya, pahamin aja tiap emosi yang dirasain dari tiap tokoh, so you can still get the point.\" Ocean menyelipkan pembatas buku, lalu menutup buku bersampul pantai itu yang kemudian mengalihkan pandangannya penuh ke arah sang adik. \"Nggak ada buku yang nggak jelas, Alie, karena tiap buku punya perspektif masing-masing. Tinggal kamu yang milih mau baca buku pakai logika atau perasaan.\""
       },
       {
@@ -228,7 +228,7 @@ window.BOOKS = {
         text: "\"Serendipity: keberuntungan yang didapat saat seseorang tidak bermaksud untuk mencari. Atau sederhananya, kebetulan yang menyenangkan.\""
       },
       {
-        label: "Stop being such a people pleaser",
+        label: "Ayah",
         text: "Tanpa disangka, pria itu menjawab, mengabaikan sejenak pada apa yang ada di dunia itu bukan tindakan jahat. Nggak ada yang salah dari menutup telinga dan mata demi mengistirahatkan pikiran. Nggak apa-apa, jangan minta maaf karena dunia yang harusnya minta maaf sama kamu, katanya sembari tersenyum hangat. Sama seperti senyuman Ayah."
       },
       {
@@ -244,11 +244,11 @@ window.BOOKS = {
         text: "Lo bisa ajak gue buat ngeliat jendela mana yang mau lo pilih, jangan merasa sendiri ya, Au. Feel free to ask me to go with you, and let's choose the window together."
       },
       {
-        label: "Berikan ruang untuk ikhlas",
+        label: "Ikhlas",
         text: "...sebelum terbawa oleh atmosfer sendu. \"Kamu tau kenapa manusia selalu diajarkan untuk ikhlas? Karena akan banyak hal-hal tidak terduga di dalam hidup yang akan datang secara tiba-tiba, hal-hal dengan situasi di mana kamu harus mau menerima atau merelakan.\""
       },
       {
-        label: "Takes time",
+        label: "The Goodness of Suffering",
         text: "The goodness of suffering is real. Every good things take time."
       }
     ],
@@ -257,6 +257,18 @@ window.BOOKS = {
     review_id: "Tulis ulasan pribadimu tentang buku ini di sini.",
     review_en: "Write your personal review of this book here.",
     external: { source: "Gramedia", url: "https://www.gramedia.com/products/lotus-in-the-mud" }
+  },
+  "pulang": {
+    title: "Pulang",
+    author: "Leila S. Chudori",
+    status: "reading",
+    cover: "cover-pulang.jpg",
+    rating: 0,
+    quote_id: "",
+    quote_en: "",
+    review_id: "Kamu masih membaca buku ini. Tulis catatan atau kesan sementaramu di sini, lalu perbarui setelah selesai.",
+    review_en: "You're still reading this one. Jot down your notes or first impressions here, then update once you finish.",
+    external: null
   },
   "the-little-prince": {
     title: "The Little Prince",
