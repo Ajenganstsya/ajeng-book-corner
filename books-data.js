@@ -261,8 +261,58 @@ window.BOOKS = {
   "pulang": {
     title: "Pulang",
     author: "Leila S. Chudori",
-    status: "reading",
+    status: "finished",
     cover: "cover-pulang.jpg",
+    rating: 5,
+    maturity: 4,
+    genre: "Historical Fiction & Political Fiction",
+    pages: 473,
+    sneakPeek: "Mengisahkan kehidupan Dimas Suryo dan rekan-rekannya sebagai eksil politik Indonesia di Paris akibat peristiwa 1965. Melalui pengelolaan Restoran Tanah Air, mereka merawat kerinduan mendalam terhadap Indonesia di tengah pelarian mereka. Cerita kemudian berlanjut ke tahun 1998 melalui sudut pandang Lintang Utara, putri Dimas, yang pergi ke Jakarta dan menyaksikan langsung detik-detik runtuhnya rezim Orde Baru.",
+    quotes: [
+      {
+        label: "Lintang",
+        text: "\"Korban?\"\n\"Ya korban dari indoktrinasi rezim. Bayangkan,\" Lintang merepet terus hingga piringnya licin tandas, \"di pesta Kedutaan itu Maman…karena kehadiranku, mereka bingung dan panik. Timbul begitu banyak pertanyaan. Mereka gamang: bagaimana kita harus memperlakukan puteri Dimas Suryo? Ramah, baik, basa-basi, atau dijauhi? Apa kebijakan Pusat? Oh kebijakan Pusat melarang mereka makan di Restoran Tanah Air, artinya, tak masalah dong jika dia berada di pesta ini. Tapi tunggu…bukankah ada kebijakan Bersih Lingkungan…Apa pula Bersih Lingkungan dan Bersih Diri itu. Bayangkan Maman, untuk orang-orang seperti aku yang saat peristiwa Gerakan 30 September itu belum lahir, dan bahkan aku lahir jauh dari Indonesia, mereka masih harus mencari formula sikap.\""
+      },
+      {
+        label: "Untaian Melati",
+        text: "\"Terimakasih sudah datang dan membawa untaian melati ini. Inilah salah satu yang membuat saya selalu bisa bertahan. Anak-anak, harum melati, dan pindang serani. Mungkin itu hanya sekadar melankoli. Tapi aku tak keberatan bersandar pada sesuatu yang sudah berlalu, jika itu bisa membuatku kuat.\""
+      },
+      {
+        label: "Sejarah yang Tak Tertulis",
+        text: "...saja hanya diinterogasi, bisa juga disetrum. Sejarah—meski tak tertulis—membuktikan, untuk tiga tahun berikutnya setelah 1965, Indonesia memiliki beberapa tahap kekejian: perburuan, penunjukan nama, penggeledahan, penangkapan, penyiksaan, penembakan, dan pembantaian. Karena itu,..."
+      },
+      {
+        label: "Surat dari Amir Jayadi",
+        text: "Dimas, ingatkah kau pembicaraan kita tentang suatu 'gelembung kosong' di dalam kita, yang diisi hanya oleh kau dan Dia, untuk sebuah Persatuan antara kita dan Dia yang tak bisa diganggu oleh apa pun barang seusapan. Inilah saat yang tepat untukmu untuk melihat sepetak kecil dalam tubuhmu itu. Sendirian. Berbincang, jika kau ingin. Atau diam, jika kau ingin. Dia mendengarkan.\nSelalu mendengarkan.\n\n— Sahabatmu, Moh. Amir Jayadi"
+      },
+      {
+        label: "Dimas",
+        text: "Dimas tertawa dan mengusap-usap rambut anaknya, \"Di tahun 1960-an, masa-masa sebelum Ayah meninggalkan Jakarta, situasi politik sangat panas. Kau di kiri atau di kanan. Kau merah, merah jambu, atau hijau, dan kehijau-hijauan. Istilah dan terminologi bertaburan dalam diskusi, bantahan, dan tuduhan serta jeritan: Manipol, Nekolim, Revolusi, Kontra-Revolusi, dan ratusan akronim buruk lainnya yang sama sekali tak menarik untuk diingat, apalagi untuk dipelajari dan diteliti. Di zaman itu, Indonesia tak mengenal zona netral. Tak mengenal area kelabu. Kau harus menjadi bagian dari Kami atau Mereka.\""
+      },
+      {
+        label: "Restoran Tanah Air",
+        text: "Dimas kini paham mengapa para diplomat yunior itu berani datang ke Restoran Tanah Air dan tidak peduli larangan resmi dari Jakarta. Bukan hanya persoalan lezatnya rendang dan gulai ayam buatannya. Tetapi ini adalah generasi baru yang merasa tidak bisa didikte oleh sesuatu yang mereka anggap tidak rasional. Mereka adalah generasi baru yang cerdas, yang mulai berani berpikir mandiri."
+      },
+      {
+        label: "Nasihat Keluarga",
+        text: "...di sekolah. Urutannya begini: Om Aji dan Yu Kenanga akan menasihati aku sekitar satu jam yang kira-kira isinya adalah 'kekerasan tidak menyelesaikan persoalan'. Tante Retno bahkan menceritakan kisah-kisah Nabi yang selalu bersabar menghadapi berbagai tantangan. Itu bukan cara jitu untuk membuatku bersabar, Tante, kataku dengan kurang ajar. Aku bukan Nabi. Yu Bulan yang tugasnya membersihkan luka dan..."
+      },
+      {
+        label: "Ekalaya & Bima",
+        text: "\"Menurut Maman, apakah Ayah seorang Ekalaya?\"\nAku menuang anggur ke dalam gelas. Anggur merah.\n\"Non.\"\n\"Kenapa tidak?\"\n\n\"Dia seorang Bima, yang selalu ingin melindungi perempuan yang dicintainya.\""
+      }
+    ],
+    quote_id: "",
+    quote_en: "",
+    review_id: "-",
+    review_en: "-",
+    external: null
+  },
+  "perempuan-di-titik-nol": {
+    title: "Perempuan di Titik Nol",
+    author: "Nawal El Saadawi (penerjemah: Moh. Amir Sutaarga)",
+    status: "reading",
+    cover: "cover-perempuan-di-titik-nol.jpg",
     rating: 0,
     quote_id: "",
     quote_en: "",
