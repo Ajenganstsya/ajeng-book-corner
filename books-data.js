@@ -282,25 +282,24 @@ window.BOOKS = {
         text: "Dimas, ingatkah kau pembicaraan kita tentang suatu 'gelembung kosong' di dalam kita, yang diisi hanya oleh kau dan Dia, untuk sebuah Persatuan antara kita dan Dia yang tak bisa diganggu oleh apa pun barang seusapan. Inilah saat yang tepat untukmu untuk melihat sepetak kecil dalam tubuhmu itu. Sendirian. Berbincang, jika kau ingin. Atau diam, jika kau ingin. Dia mendengarkan.\nSelalu mendengarkan.\n\n— Sahabatmu, Moh. Amir Jayadi"
       },
       {
-        label: "Masa Indonesia tak mengenal zona netral",
+        label: "Masa Indonesia Tak Mengenal Zona Netral",
         text: "Dimas tertawa dan mengusap-usap rambut anaknya, \"Di tahun 1960-an, masa-masa sebelum Ayah meninggalkan Jakarta, situasi politik sangat panas. Kau di kiri atau di kanan. Kau merah, merah jambu, atau hijau, dan kehijau-hijauan. Istilah dan terminologi bertaburan dalam diskusi, bantahan, dan tuduhan serta jeritan: Manipol, Nekolim, Revolusi, Kontra-Revolusi, dan ratusan akronim buruk lainnya yang sama sekali tak menarik untuk diingat, apalagi untuk dipelajari dan diteliti. Di zaman itu, Indonesia tak mengenal zona netral. Tak mengenal area kelabu. Kau harus menjadi bagian dari Kami atau Mereka.\""
       },
       {
-        label: "Generasi yang tidak bisa didikte",
+        label: "Generasi yang Tidak Bisa Didikte",
         text: "Dimas kini paham mengapa para diplomat yunior itu berani datang ke Restoran Tanah Air dan tidak peduli larangan resmi dari Jakarta. Bukan hanya persoalan lezatnya rendang dan gulai ayam buatannya. Tetapi ini adalah generasi baru yang merasa tidak bisa didikte oleh sesuatu yang mereka anggap tidak rasional. Mereka adalah generasi baru yang cerdas, yang mulai berani berpikir mandiri."
       },
       {
         label: "Dimas Suryo = Bima",
         text: "\"Menurut Maman, apakah Ayah seorang Ekalaya?\"\nAku menuang anggur ke dalam gelas. Anggur merah.\n\"Non.\"\n\"Kenapa tidak?\"\n\n\"Dia seorang Bima, yang selalu ingin melindungi perempuan yang dicintainya.\""
-       },
+      },
       {
-      label: "Surti Anandari - The strongest Mom",
+        label: "Surti Anandari - The Strongest Mom",
         text: "\"Terimakasih sudah datang dan membawa untaian melati ini. Inilah salah satu yang membuat saya selalu bisa bertahan. Anak-anak, harum melati, dan pindang serani. Mungkin itu hanya sekadar melankoli. Tapi aku tak keberatan bersandar pada sesuatu yang sudah berlalu, jika itu bisa membuatku kuat.\""
-       },
+      },
       {
-      label: "Pesan Dimas Suryo untuk Lintang",
-        text: "\"Kau harus berani memilih dengan segala risikonya. Ayah tahu kau masih muda. Memilih tak berarti harus menikah besok. Tidak memilih Nara atau Alam juga berarti memilih. Memilih untuk sendiri dan sunyi.. Lintang, kau menghidupi hidupku. Dan kalaupun aku sudah mati, kau tetap hidup di dala diriku.\"Ayahmu,\.\"Dimas Suryo.\
-      
+        label: "Pesan Dimas Suryo untuk Lintang",
+        text: "\"Kau harus berani memilih dengan segala risikonya. Ayah tahu kau masih muda. Memilih tak berarti harus menikah besok. Tidak memilih Nara atau Alam juga berarti memilih. Memilih untuk sendiri dan sunyi. Lintang, kau menghidupi hidupku. Dan kalaupun aku sudah mati, kau tetap hidup di dalam diriku.\"\n\nAyahmu,\nDimas Suryo."
       }
     ],
     quote_id: "",
